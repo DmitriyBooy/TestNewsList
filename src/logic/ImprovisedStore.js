@@ -13,7 +13,7 @@ export default class ImprovisedStore {
     if (this.loadIsPossible) {
       const xhr = new XMLHttpRequest()
 
-      xhr.open('GET', `http://flems.github.io/test/api/news/${this.currentPage + 1}`)
+      xhr.open('GET', `https://flems.github.io/test/api/news/${this.currentPage + 1}`)
 
       xhr.onload = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
